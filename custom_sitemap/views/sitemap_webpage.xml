@@ -1,0 +1,99 @@
+<odoo>
+    <data>
+
+        <!-- This is what is displayed on the website.-->
+
+         <template id="captivea_sitemap" name="Sitemap">
+            <t t-call="website.layout">
+                <div class="container" style="padding-top:30px">
+                    <div class="row" style="text-align:center">
+                      <div class="col-lg">
+                      <h1><t t-esc="website_name"></t></h1>
+                      </div>
+                    </div>
+                    <div class="row" style="padding-top:20px">
+                        <div t-if="web_pages" class="col-sm">
+                          <h3>Web Pages</h3>
+                          <hr style="padding-bottom:4px"></hr>
+                          <t t-foreach="web_pages" t-as="page">
+                              <a t-att-href="page['url']"><t t-esc="page['name']"></t></a>
+                              <br></br>
+                          </t>
+                        </div>
+
+                        <div t-if="blog_posts" class="col-sm">
+                          <h3>Blogs and Blog Posts</h3>
+                          <hr style="padding-bottom:4px"></hr>
+                          <t t-foreach="blog_posts" t-as="blog">
+                              <a t-att-href="blog['url']"><t t-esc="blog['name']"></t></a>
+                              <br></br>
+                          </t>
+                        </div>
+
+                        <div t-if="event_pages" class="col-sm">
+                          <h3>Events</h3>
+                          <hr style="padding-bottom:4px"></hr>
+                          <t t-foreach="event_pages" t-as="event">
+                              <a t-att-href="event['url']"><t t-esc="event['name']"></t></a>
+                              <br></br>
+                          </t>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top:20px">
+                        <div t-if="job_posts" class="col-sm">
+                           <h3>Jobs</h3>
+                           <hr style="padding-bottom:4px"></hr>
+                           <t t-foreach="job_posts" t-as="jobs">
+                               <a t-att-href="jobs['url']"><t t-esc="jobs['name']"></t></a>
+                               <br></br>
+                           </t>
+                         </div>
+                         <div t-if="livechat_channels" class="col-sm">
+                            <h3>Livechat Channels</h3>
+                            <hr style="padding-bottom:4px"></hr>
+                            <t t-foreach="livechat_channels" t-as="channels">
+                                <a t-att-href="channels['url']"><t t-esc="channels['name']"></t></a>
+                                <br></br>
+                            </t>
+                          </div>
+                          <div t-if="ecourses" class="col-sm">
+                             <h3>eCourses</h3>
+                             <hr style="padding-bottom:4px"></hr>
+                             <t t-foreach="ecourses" t-as="ecourses">
+                                 <a t-att-href="ecourses['url']"><t t-esc="ecourses['name']"></t></a>
+                                 <br></br>
+                             </t>
+                           </div>
+                    </div>
+                    <div class="row" style="padding-top:20px; padding-bottom:50px">
+                        <div t-if="appointments" class="col-sm">
+                           <h3>Appointments</h3>
+                           <hr style="padding-bottom:4px"></hr>
+                           <t t-foreach="appointments" t-as="appts">
+                               <a t-att-href="appts['url']"><t t-esc="appts['name']"></t></a>
+                               <br></br>
+                           </t>
+                         </div>
+                         <div t-if="products" class="col-sm">
+                            <h3>Products</h3>
+                            <hr style="padding-bottom:4px"></hr>
+                            <t t-foreach="products" t-as="prod">
+                                <a t-att-href="prod['url']"><t t-esc="prod['name']"></t></a>
+                                <br></br>
+                            </t>
+                          </div>
+                          <div t-if="forum_posts" class="col-sm">
+                             <h3>Forums and Forum Posts</h3>
+                             <hr style="padding-bottom:4px"></hr>
+                             <t t-foreach="forum_posts" t-as="posts">
+                                 <a t-att-href="posts['url']"><t t-esc="posts['name']"></t></a>
+                                 <br></br>
+                             </t>
+                           </div>
+                    </div>
+                </div>
+            </t>
+         </template>
+
+    </data>
+</odoo>

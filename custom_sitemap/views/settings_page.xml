@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+      <!-- page list view  -->
+    <record id="sitemap_settings_list_view" model="ir.ui.view">
+      <field name="name">sitemap_settings_list_view</field>
+      <field name="model">website.sitemap.settings</field>
+      <field name="arch" type="xml">
+          <tree create="false" import="false" delete="1" string="Website Sitemaps">
+              <field name="name"/>
+          </tree>
+      </field>
+    </record>
+
+    <!-- Form view of settings -->
+    <record id="sitemap_settings_form_view" model="ir.ui.view">
+        <field name="name">sitemap_settings_form_view</field>
+        <field name="model">website.sitemap.settings</field>
+        <field name="arch" type="xml">
+            <form create="false" import="false" delete="0">
+              <group>
+                <group>
+                    <field name="webpages"/>
+                    <field name="blog_posts"/>
+                    <field name="events"/>
+                    <field name="jobs"/>
+                    <field name="livechat_channels"/>
+                    <field name="ecourses"/>
+                    <field name="appointments"/>
+                    <field name="products"/>
+                    <field name="forum_posts"/>
+                  </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sitemap_settings" model="ir.actions.act_window">
+        <field name="name">Website Sitemaps</field>
+        <field name="res_model">website.sitemap.settings</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="sitemap_settings_list_view"/>
+    </record>
+
+      <menuitem id="sitemap_settings"
+              name="Sitemap Settings"
+              sequence="10"
+              parent="website.menu_website_global_configuration"
+              action="action_sitemap_settings"/>
+</odoo>

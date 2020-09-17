@@ -1,0 +1,10 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- for any existing websites, create sitemap settings -->
+        <function model="website" name="create_sitemap_settings_init"
+        eval="[[]]"/>
+
+    </data>
+
+</odoo>
