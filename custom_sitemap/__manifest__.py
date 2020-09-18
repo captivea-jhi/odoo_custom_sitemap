@@ -24,6 +24,5 @@
         'views/sitemap_webpage.xml',
         'views/settings_page.xml',
         'data/data.xml',
-        'images': 'images/main_screenshot.png',
-        ]
+        'images': 'images/main_screenshot.png',]
 }
