@@ -13,6 +13,7 @@
 
     'author': "Captivea",
     'website': "https://www.Captivea.us/",
+    'license': 'LGPL-3',
 
     'category': 'Website',
     'version': '1.0',
@@ -26,6 +27,5 @@
         'views/sitemap_webpage.xml',
         'views/settings_page.xml',
         'data/data.xml',
-        'license': 'LGPL-3',
         ]
 }
