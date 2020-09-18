@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Captivea Custom Sitemap",
+    'name': "Custom Sitemap",
 
     'summary': """
         Generates a custom sitemap.
@@ -11,7 +11,7 @@
         Each website has associated settings page under Website > Configuration > Sitemap Settings
     """,
 
-    'author': "Joe Hill Captivea",
+    'author': "Captivea",
     'website': "https://www.Captivea.us/",
 
     'category': 'Uncategorized',
@@ -26,5 +26,6 @@
         'views/sitemap_webpage.xml',
         'views/settings_page.xml',
         'data/data.xml',
+        'license': 'LGPL-3',
         ]
 }
