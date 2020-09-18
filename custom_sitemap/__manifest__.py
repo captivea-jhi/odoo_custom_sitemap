@@ -7,7 +7,7 @@
         """,
 
     'description': """
-        Iterates through all web pages and generates a stylized sitemap available on the website.
+        Iterates through all web pages and generates a stylized sitemap available on the website under /sitemap.
         Each website has associated settings page under Website > Configuration > Sitemap Settings where the user can include or ignore certain page types.
     """,
 
