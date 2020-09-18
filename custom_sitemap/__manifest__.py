@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Captivea Custom Sitemap",
+    'name': "Custom Sitemap",
 
     'summary': """
-        Generates a custom sitemap.
+        Generates a customizable sitemap for each website on your Odoo.
         """,
 
     'description': """
-        Iterates through all web pages, including blogs and events, and generates a stylized sitemap available on the website.
-        Each website has associated settings page under Website > Configuration > Sitemap Settings
+        Iterates through all web pages and generates a stylized sitemap available on the website.
+        Each website has associated settings page under Website > Configuration > Sitemap Settings where the user can include or ignore certain page types.
     """,
 
-    'author': "Joe Hill Captivea",
+    'author': "Captivea",
     'website': "https://www.Captivea.us/",
 
-    'category': 'Uncategorized',
+    'category': 'Website',
     'version': '1.0',
 
     'depends': ['base','website'],
@@ -27,5 +27,5 @@
         'views/settings_page.xml',
         'data/data.xml',
         'license': 'LGPL-3',
-    ]
+        ]
 }
